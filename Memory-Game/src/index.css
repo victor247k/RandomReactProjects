@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,300&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: #2D3250;
+  --secondary: #424769;
+  --primary: #7077A1;
+  --text: #FFFFFF;
+  --accent: #F6B17A;
+  --wrong: #f67a85;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Ubuntu", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* line-height: 1.5; */
+}
+
+.game {
+  /* margin-top: 1rem;  */
+}
+
+.game-ascii-art {
+  /* line-height: 1.5; */
+  color: var(--accent);
+  text-shadow: 1px 1px 15px var(--accent);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.game-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.game-text {
+  color: var(--primary);
+  font-size: 2.5rem;
+  text-align: center;
+}
+ 
+.guessing-game {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* font-style: bold; */
+}
+
+.special-text {
+  color: var(--text);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.game-levels {
+  color: var(--accent);
+}
+
+.game-mistakes {
+  color: var(--wrong);
+}
+
+.game-display {
+  color: var(--wrong);
+  text-shadow: 1px 1px 15px var(--accent);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game-form-label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: bold;
+}
+.game-form {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.game-form-input {
+  margin-left: 2rem;
+  color: var(--text);
+  background-color: var(--secondary);
+  border: 2px solid transparent;
+  border-bottom: 2px solid var(--primary);
+  border-left: 2px solid var(--primary);
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+  border-radius: 5px;
+  transition: 200ms;
+  font-family: "Ubuntu", sans-serif;
+}
+.game-form-input:focus, .game-form-input:hover {
+  background-color: var(--primary);
+  outline: none;
+}
+.restart-btn {
+  align-self: center; 
+  font-size: 1.5rem;
+  padding: 1px 5px 1px 5px;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--bg);
+  font-weight: 300;
+  font-style: italic;
+  background-color: var(--text);
+  border: none;
+  border-radius: 15px 5px 15px 5px;
+  transition: 200ms;
+  cursor: pointer;
+}
+.restart-btn:focus, .restart-btn:hover {
+  outline: none;
+  background-color: var(--secondary);
+  color: var(--text);
+}
+.decoration {
+  color: var(--secondary);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
