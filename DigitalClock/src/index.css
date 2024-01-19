@@ -15,10 +15,11 @@ body {
 
 .clock-container {
   padding: 2rem;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   color: white;
   font-family: 'Ubuntu', sans-serif;
+  font-style: bold;
   font-size: 5rem;
   backdrop-filter: blur(10px);
 }
